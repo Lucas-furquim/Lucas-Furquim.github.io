@@ -1,0 +1,22 @@
+.termos-conteudo {
+  padding: 80px 60px;
+}
+
+.termos-conteudo dt {
+  padding-bottom: 24px;
+}
+
+.termos-conteudo dd {
+  max-width: 80ch;
+  padding-bottom: 20px;
+}
+
+.desc {
+  padding-bottom: 40px !important;
+}
+
+@media (max-width: 600px) {
+  .termos-conteudo {
+    padding: 40px 20px;
+  }
+}

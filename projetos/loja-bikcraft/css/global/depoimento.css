@@ -1,0 +1,69 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.depoimento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.depoimento {
+  background-color: var(--p1);
+}
+
+.depoimento-conteudo {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 80px left
+    500px;
+}
+
+.depoimento-conteudo p {
+  max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  margin-bottom: 32px;
+  position: relative;
+}
+/*  */
+.depoimento p::before {
+  content: "“ ";
+  position: absolute;
+  left: -50px;
+  top: -20px;
+  font-size: 4.5rem;
+  color: var(--p2);
+}
+
+.depoimento p::after {
+  position: absolute;
+  content: "”";
+  font-size: 4.5rem;
+  color: var(--p2);
+}
+
+.depoimento span {
+  /* display: block; */
+  text-align: end;
+}
+
+@media (min-width: 600px) {
+  .depoimento img {
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    justify-self: center;
+  }
+}

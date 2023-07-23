@@ -1,0 +1,72 @@
+.local h2 {
+  padding-bottom: 60px;
+}
+
+.local-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.local-conteudo h3 {
+  padding: 20px;
+}
+
+.local-conteudo ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.local-conteudo ul li:nth-child(-n + 2) {
+  padding-bottom: 12px;
+}
+
+.local-conteudo ul li {
+  padding-left: 20px;
+  border-left: 2px solid var(--c2);
+}
+
+.local-conteudo > div {
+  background-color: var(--c0);
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.local-conteudo img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.local-conteudo p {
+  padding: 20px 50px;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  background: url("../../img/icones/horario.svg") no-repeat 20px;
+}
+
+@media (max-width: 900px) {
+  .local-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .local h2 {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .local-conteudo ul {
+    grid-template-columns: 1fr;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .local-conteudo ul li + li {
+    padding-top: 12px;
+  }
+
+  .local-conteudo ul li {
+    border-left: none;
+  }
+  .local-conteudo ul li:nth-child(-n + 2) {
+    padding-bottom: 0px;
+  }
+}

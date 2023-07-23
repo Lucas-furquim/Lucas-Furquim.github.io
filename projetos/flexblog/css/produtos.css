@@ -1,0 +1,40 @@
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h2 {
+  font: 700 3rem/1 "Nunito";
+  margin: 60px 20px;
+}
+
+.produtos-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 0px 10px;
+}
+
+.produtos-item {
+  background-color: #f9f9f9;
+  flex: 1 1 260px;
+}
+
+.purple {
+  border-top: 6px solid purple;
+}
+
+.pink {
+  border-top: 6px solid rgb(252, 60, 92);
+}
+
+.blue {
+  border-top: 6px solid blue;
+}
+
+.produtos-item p {
+  font: 700 3rem/1.1 "Nunito";
+  margin: 40px 0px 40px 10px;
+  color: #888;
+}

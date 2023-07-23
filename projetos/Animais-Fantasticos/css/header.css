@@ -1,0 +1,143 @@
+.header {
+  grid-column: 3/-1;
+  margin: 40px 0px;
+}
+
+.nav {
+  padding: 2px;
+  background-color: var(--y1);
+}
+
+.nav ul {
+  display: flex;
+  padding: 8px 4px;
+  position: relative;
+}
+
+.nav ul li {
+  padding: 4px;
+  margin: 0px 8px;
+}
+
+.nav ul li a {
+  display: inline-block;
+  text-transform: uppercase;
+  font: 600 0.875rem/1 "IBM Plex Mono", monospace;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  padding: 8px;
+}
+
+.nav ul li:last-child a {
+  padding-right: 25px;
+}
+
+.nav ul li:last-child::after {
+  display: inline-block;
+  content: "→";
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav .sobre ul li:last-child::after {
+  content: "";
+}
+
+[data-sobre] a::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 10px solid #222;
+  transition: transform 0.5s;
+}
+
+[data-sobre].ativo a::after {
+  transition: transform 0.5s;
+  transform: rotate(180deg);
+}
+
+[data-sobre]:hover a::after {
+  transition: transform 0.5s;
+  transform: rotate(180deg);
+}
+
+[data-sobre] .mais {
+  position: absolute;
+  display: none;
+  text-transform: uppercase;
+  font: 600 0.875rem/1 "IBM Plex Mono", monospace;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  z-index: 1;
+  background-color: var(--v1);
+  border: 4px solid black;
+}
+
+[data-sobre] .mais.ativo {
+  display: block;
+}
+
+[data-sobre]:hover .mais {
+  display: block;
+  animation: drop 0.5s forwards;
+}
+
+[data-sobre] .mais:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid var(--v1);
+  top: -9px;
+  left: 10px;
+  animation: drop 0.5s forwards;
+}
+[data-sobre] .mais li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+[data-sobre] ul li + li {
+  margin-top: 10px;
+}
+
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -10px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    grid-column: 1/-1;
+    margin: 0px;
+  }
+
+  .nav {
+    padding: 10px 0px 10px 5px;
+  }
+
+  .nav ul li a {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .nav ul li {
+    margin: 0px 2px;
+  }
+}

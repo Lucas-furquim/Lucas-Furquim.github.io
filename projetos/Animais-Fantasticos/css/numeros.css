@@ -1,0 +1,25 @@
+.numeros-animais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 60px 40px 0px 40px;
+}
+
+.numeros-animais h3 {
+  font-size: 2rem;
+  font-family: "Playfair Display SC";
+  margin-bottom: 0.5rem;
+}
+
+.numeros-animais p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e54;
+}
+
+@media (max-width: 600px) {
+  .numeros-animais {
+    grid-template-columns: 1fr;
+  }
+}

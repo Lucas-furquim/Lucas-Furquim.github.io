@@ -1,0 +1,154 @@
+body {
+  background-color: var(--c1);
+}
+
+.contato-bg {
+  background-image: linear-gradient(to bottom, var(--c11) 50%, var(--c1) 0%);
+  margin-bottom: 80px;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-conteudo {
+  background-color: var(--c12);
+  padding: 40px 60px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.contato-conteudo h3 {
+  padding-bottom: 40px;
+}
+
+.contato-conteudo > div + div,
+.contato-conteudo > address {
+  padding-top: 20px;
+}
+
+.contato-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+}
+
+.contato-info p,
+.contato-info a {
+  grid-column: 2;
+}
+
+.contato-info a {
+  display: block;
+  max-width: max-content;
+}
+
+.contato-info a:hover {
+  color: var(--c0);
+}
+
+.contato-info {
+  grid-row: 1/-1;
+}
+
+.contato-icone {
+  padding-left: 28px;
+  margin-top: 60px;
+}
+
+.fomulario-conteudo {
+  background-color: var(--c0);
+  padding: 40px 60px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.fomulario-conteudo,
+.contato-conteudo {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-contato label {
+  display: block;
+  margin-bottom: 4px;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+}
+
+.form-contato input {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--c1);
+  border: 1px solid var(--c2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-contato textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--c1);
+  border: 1px solid var(--c2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-email {
+  grid-column: 1/-1;
+}
+
+.form-area {
+  grid-column: 1/-1;
+}
+
+.form-botao {
+  grid-column: 1/-1;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  outline: none;
+  border-color: var(--p1);
+  box-shadow: 0px 0px 0 2px #fea;
+  background-color: var(--c0);
+}
+
+@media (max-width: 900px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-icone {
+    padding-left: 28px;
+    margin-top: 40px;
+  }
+
+  .contato-conteudo {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .fomulario-conteudo {
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .contato-conteudo h3 {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-contato {
+    grid-template-columns: 1fr;
+  }
+  .contato-conteudo,
+  .fomulario-conteudo {
+    padding: 20px 40px;
+  }
+}

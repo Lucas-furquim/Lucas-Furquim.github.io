@@ -1,0 +1,121 @@
+.container {
+  padding: 0px 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link {
+  display: inline-block;
+  color: var(--p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+}
+
+.link:hover {
+  color: var(--c0);
+}
+
+.botao {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 16px 32px;
+  color: var(--p5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(#ffbf00, #dd9608);
+  text-transform: uppercase;
+  max-width: max-content;
+  font: 600 1.125rem/1.3 "Poppins", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+@media (max-width: 650px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+}
+
+.botao.secundario {
+  background: var(--c10);
+  color: var(--c2);
+}
+
+.botao.secundario:hover {
+  background: var(--c9);
+  color: var(--c2);
+}
+
+.seta::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 18px;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  background-image: url("../../img/icones/seta.svg");
+  transition: 0.3s;
+}
+
+.seta:hover::after {
+  margin-left: 20px;
+}
+
+.titulo-bg {
+  background-color: var(--c11);
+}
+
+.titulo {
+  padding: 60px 0px 80px 32px;
+}
+
+.padding-alinha {
+  padding-left: 25px;
+}
+
+.form input {
+  display: block;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--c1);
+  border: 1px solid var(--c2);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: var(--p1);
+  box-shadow: 0px 0px 0 2px #fea;
+  background-color: var(--c0);
+}
+
+@media (max-width: 1200px) {
+  .titulo {
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    padding: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}

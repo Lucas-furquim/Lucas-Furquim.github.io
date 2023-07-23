@@ -1,0 +1,37 @@
+.introducao {
+  font: 700 3rem/1 "nunito", Arial, sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+.sobre {
+  margin: 0 auto;
+  max-width: 960px;
+  border-top: 2px solid #122ab2;
+  border-bottom: 2px solid #122ab2;
+  padding: 60px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-info {
+  flex: 2 1 300px;
+  margin: 0 10px;
+}
+
+.sobre-info h2 {
+  font: 700 3rem/1 "nunito", Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+.sobre-info p {
+  font: 400 1.125rem/1.4 "nunito", arial, sans-serif;
+  margin-bottom: 1rem;
+  color: #7c7c7c;
+}
+
+.sobre-item {
+  flex: 1 1 160px;
+  margin: 0 10px;
+}

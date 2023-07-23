@@ -1,0 +1,88 @@
+.js [data-desc="desc"] section {
+  display: none;
+}
+
+[data-desc="desc"] [data-down="down"].ativo {
+  display: block;
+  animation: show 0.5s forwards;
+}
+
+[data-desc="desc"] [data-right="right"].ativo {
+  display: block;
+  animation: showDown 0.5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js .js-faq-lista dt::after {
+  content: "↴";
+  display: inline-block;
+  color: #e54;
+  transition: transform 0.5s;
+}
+
+.js .js-faq-lista dt.ativo::after {
+  transform: rotate(180deg);
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.js .js-faq-lista dd {
+  display: none;
+}
+
+.js-faq-lista dd.ativo {
+  display: block;
+  animation: accordion 1s forwards;
+}
+
+@keyframes accordion {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 100px;
+  }
+}
+
+.js .js-scroll {
+  visibility: hidden;
+}
+
+.js .js-scroll.ativo {
+  visibility: visible;
+  animation: scroll 0.5s forwards;
+}
+
+@keyframes scroll {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}

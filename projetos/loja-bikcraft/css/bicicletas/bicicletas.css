@@ -1,0 +1,136 @@
+.bicicletas-pag {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 60px 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.bicicletas-pag-img span {
+  background-color: var(--c12);
+  padding: 8px 16px;
+  border-radius: 5px 0px 0px 5px;
+  display: inline-block;
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+}
+
+.bicicletas-pag-img img {
+  grid-area: 1/1;
+}
+
+.bicicletas-pag-img {
+  display: grid;
+}
+
+.bicicletas-bg-pag {
+  padding: 20px 20px;
+}
+
+.bicicletas-bg-pag:nth-child(odd) {
+  background-image: linear-gradient(to right, var(--c0) 30%, var(--c11) 0%);
+}
+
+.bicicletas-pag-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bicicletas-pag-conteudo img {
+  width: 24px;
+}
+
+.bicicletas-pag-conteudo h3 {
+  align-self: center;
+  position: relative;
+}
+
+.bicicletas-pag-conteudo h3::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  top: -10px;
+  left: 1px;
+  background-color: var(--p1);
+}
+
+.bicicletas-pag-conteudo h3,
+.bicicletas-pag-conteudo p {
+  grid-column: 1/-1;
+}
+
+.bicicletas-pag-conteudo ul li {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  place-self: start;
+}
+
+.bicicletas-pag-conteudo ul li + li {
+  margin-top: 10px;
+}
+
+.bicicletas-pag-conteudo a {
+  place-self: end;
+  margin-bottom: 20px;
+}
+
+.bicicletas-pag-conteudo ul {
+  display: grid;
+  align-content: end;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .bicicletas-pag {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-pag-conteudo h3 {
+    margin-bottom: 20px;
+  }
+  .bicicletas-bg-pag:nth-child(odd) {
+    background-image: linear-gradient(to right, var(--c0) 0%, var(--c11) 0%);
+  }
+
+  .bicicletas-pag-conteudo a {
+    margin-bottom: 0px;
+  }
+
+  .bicicletas-pag-conteudo ul {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bicicletas-pag {
+    gap: 10px;
+  }
+
+  .bicicletas-pag-conteudo ul li + li {
+    margin-top: 0px;
+  }
+
+  .bicicletas-pag-conteudo ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 0px;
+  }
+  .bicicletas-pag-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-pag-conteudo a {
+    margin-top: 20px;
+    place-self: start;
+  }
+
+  .bicicletas-pag-conteudo h3::before {
+    display: none;
+  }
+}

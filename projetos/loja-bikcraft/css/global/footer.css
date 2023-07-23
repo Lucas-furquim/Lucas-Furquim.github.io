@@ -1,0 +1,83 @@
+.rodape-bg {
+  background-color: var(--c12);
+}
+
+.rodape {
+  padding: 60px 0px;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  padding-left: 20px;
+}
+
+.rodape p {
+  padding-top: 20px;
+  grid-column: 1/-1;
+}
+
+.rodape h2 {
+  padding-bottom: 40px;
+}
+
+.rodape > a {
+  place-self: start;
+}
+
+.loca li + li {
+  padding: 20px 0px;
+}
+
+.info li + li {
+  padding-top: 20px;
+}
+
+.rodape-item li a:hover {
+  color: var(--c1);
+}
+
+.det {
+  border-bottom: 2px solid var(--c11);
+  max-width: 360px;
+  word-break: break-all;
+}
+
+.rodape-icone {
+  display: flex;
+  gap: 0px 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .rodape > img {
+    display: none;
+  }
+  .rodape {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .rodape {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .rodape {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+  }
+
+  .rodape-icone {
+    gap: 0px 40px;
+    margin-bottom: 20px;
+  }
+
+  .rodape h2 {
+    padding-bottom: 20px;
+  }
+
+  .info li {
+    padding: 16px 0px;
+  }
+}

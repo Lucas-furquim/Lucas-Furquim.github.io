@@ -1,0 +1,236 @@
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+
+.bicicletas-conteudo img {
+  min-width: 200px;
+}
+
+.bicicletas-conteudo img:first-child {
+  grid-column: 1/-1;
+}
+
+.bicicletas-conteudo img:nth-child(n + 2) {
+  cursor: pointer;
+}
+
+.bicicletas h2 {
+  padding: 40px 0px 10px 20px;
+  margin: 0px;
+}
+.nimbus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0px 0px 40px 0px;
+}
+
+.nimbus-conteudo > p {
+  padding-bottom: 20px;
+}
+
+.nimbus-extra {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.nimbus-span > div > img {
+  height: 100%;
+}
+
+.nimbus-span {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.nimbus-span > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: max-content;
+  border-radius: 5px;
+  padding: 2px 4px;
+  background-color: var(--c12);
+}
+
+.nimbus-span span {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.nimbus-span img {
+  display: inline-block;
+}
+
+.nimbus-lista {
+  margin-top: 40px;
+}
+
+.nimbus-lista h2 {
+  padding-bottom: 10px;
+}
+
+.nimbus-lista .nimbus-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--c12);
+  margin-bottom: 40px;
+  gap: 20px 40px;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.nimbus-lista li img {
+  width: 20px;
+  padding-bottom: 10px;
+}
+
+.ficha-tecnica ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--c12);
+  margin-bottom: 40px;
+  gap: 15px;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.ficha-tecnica li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--c11);
+}
+
+.ficha-tecnica li:last-child {
+  border-bottom: none;
+}
+
+.nimbus-mais {
+  grid-template-columns: 1fr 1fr;
+}
+
+.pedale {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.pedale-conteudo {
+  padding: 80px 0px;
+}
+
+.pedale-conteudo h2 {
+  padding: 40px 0px 20px 0px;
+}
+
+.pedale-conteudo p {
+  padding: 20px 0px;
+}
+
+.pedale-bg {
+  box-shadow: inset 0px 60px var(--c0), inset 0px -60px var(--c12);
+}
+
+.pedale-img {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+@media (max-width: 1200px) {
+  .nimbus {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nimbus-span span {
+    font-size: 0.7rem;
+  }
+  .nimbus {
+    gap: 14px;
+  }
+
+  .nimbus-extra {
+    gap: 8px;
+  }
+
+  .nimbus-extra a {
+    font-size: 1rem;
+  }
+  .nimbus-pag > p {
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 850px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .pedale img {
+    display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  .nimbus {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-conteudo {
+    grid-row: 2;
+    padding-bottom: 40px;
+  }
+  .nimbus-pag {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .bicicletas h2 {
+    padding: 40px 0px 10px 0px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nimbus-lista .nimbus-info {
+    grid-template-columns: 1fr;
+  }
+
+  .pedale-bg {
+    box-shadow: inset 0px -40px var(--c12);
+  }
+
+  .nimbus-extra {
+    grid-template-columns: 1fr;
+  }
+
+  .pedale {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pedale-conteudo {
+    grid-column: 1/-1;
+    grid-row: 1;
+    padding: 0px;
+  }
+
+  .pedale-conteudo h2 {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .pedale-conteudo p {
+    padding: 10px 0px;
+  }
+
+  .pedale-img {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+}

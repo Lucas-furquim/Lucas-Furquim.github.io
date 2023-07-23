@@ -1,0 +1,19 @@
+:root {
+  --c12: #222;
+  --v1: rgb(226, 62, 44);
+  --y1: #fb5;
+}
+
+.titulo-g {
+  font: 400 6rem/1 "Playfair Display SC", georgia;
+  margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .titulo-g {
+    font: 400 3rem/1 "Playfair Display SC", georgia;
+  }
+}
+
+/* font-family: 'IBM Plex Mono', monospace;
+font-family: 'Playfair Display SC', serif; */ ;
