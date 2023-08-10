@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+:root {
+  --ff-main: "Roboto", "sans-serif";
+  --ff-cursive: "Sriracha", cursive;
+}
+.ffMain {
+  font-family: var(--ff-main);
+  font-size: 5rem;
+}
+
+.ffCursive {
+  font-family: var(--ff-cursive);
+}
+
+@media (max-width: 800px) {
+  .ffMain {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .ffMain {
+    font-size: 4rem;
+  }
+}
+
+.subtitulo {
+  display: block;
+  text-align: center;
+  font-family: var(--ff-cursive);
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 100px 0px 80px 100px;
+}
+.subtitulo::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  color: white;
+  background-color: white;
+  width: 100px;
+  height: 4px;
+  top: 20px;
+  left: -200px;
+}

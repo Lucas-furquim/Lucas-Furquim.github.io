@@ -1,0 +1,115 @@
+body {
+  background: url("../images/hero-img.jpg") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-titans {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px auto auto 400px;
+  gap: 20px;
+  justify-items: center;
+}
+
+.bg-main {
+  width: 100%;
+  position: absolute;
+  z-index: -999;
+  object-fit: cover;
+  max-height: 900px;
+}
+
+.titulo-titans {
+  color: var(--white);
+  margin: 0px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  display: block;
+  position: relative;
+  text-align: center;
+  grid-row: 2/3;
+}
+.div-btn {
+  grid-row: 3/4;
+}
+
+.main-btn {
+  font-family: var(--ff-main);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  margin: auto 15px;
+  border: 2px solid var(--dark-red);
+  border-radius: 5px;
+  background-color: var(--light-shadow);
+  color: var(--dark-red);
+  padding: 10px 20px;
+
+  transition: all 0.5s ease;
+}
+
+.main-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.main-seta {
+  position: relative;
+  bottom: -230%;
+  height: 30px;
+  width: 35px;
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 2px;
+  cursor: pointer;
+
+  color: red;
+}
+.main-seta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 30px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.main-seta::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 2px solid red;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .main-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .div-btn {
+    display: grid;
+    gap: 15px;
+  }
+  .main-btn {
+    display: block;
+    width: 170px;
+  }
+}
