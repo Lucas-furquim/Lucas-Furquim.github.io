@@ -7,6 +7,7 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./js/modulos/BtnHome.js":
@@ -15,29 +16,7 @@
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ BtnHome)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ \"./node_modules/@babel/runtime/helpers/esm/classCallCheck.js\");\n/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ \"./node_modules/@babel/runtime/helpers/esm/createClass.js\");\n\n\nvar BtnHome = /*#__PURE__*/function () {\n  function BtnHome(btn, lista, titulo) {\n    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(this, BtnHome);\n    this.btn = document.querySelector(btn);\n    this.lista = document.querySelector(lista);\n    this.titulo = document.querySelector(titulo);\n    this.realBtn = document.querySelector(\".btn-mobile\");\n  }\n  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(BtnHome, [{\n    key: \"eventoClique\",\n    value: function eventoClique() {\n      var _this = this;\n      this.btn.addEventListener(\"click\", function () {\n        _this.addAtivo();\n      });\n    }\n  }, {\n    key: \"addAtivo\",\n    value: function addAtivo() {\n      this.lista.classList.toggle(\"ativo\");\n      this.titulo.classList.toggle(\"ativo\");\n      this.titulo.classList.contains(\"ativo\") ? this.btn.setAttribute(\"aria-hidden\", \"false\") : this.btn.setAttribute(\"aria-hidden\", \"true\");\n      this.titulo.classList.contains(\"ativo\") ? this.realBtn.setAttribute(\"aria-expanded\", \"true\") : this.realBtn.setAttribute(\"aria-expanded\", \"false\");\n    }\n  }, {\n    key: \"init\",\n    value: function init() {\n      this.eventoClique();\n    }\n  }]);\n  return BtnHome;\n}();\n\n\n//# sourceURL=webpack://projeto2/./js/modulos/BtnHome.js?");
-
-/***/ }),
-
-/***/ "./js/modulos/ImgTela.js":
-/*!*******************************!*\
-  !*** ./js/modulos/ImgTela.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ImgTela)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ \"./node_modules/@babel/runtime/helpers/esm/classCallCheck.js\");\n/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ \"./node_modules/@babel/runtime/helpers/esm/createClass.js\");\n\n\nvar ImgTela = /*#__PURE__*/function () {\n  function ImgTela(tela) {\n    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(this, ImgTela);\n    this.tela = document.querySelector(tela);\n  }\n  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(ImgTela, [{\n    key: \"telaCheia\",\n    value: function telaCheia() {\n      this.tela.style.height = window.innerHeight - 64 + \"px\";\n    }\n  }, {\n    key: \"init\",\n    value: function init() {\n      this.telaCheia();\n    }\n  }]);\n  return ImgTela;\n}();\n\n\n//# sourceURL=webpack://projeto2/./js/modulos/ImgTela.js?");
-
-/***/ }),
-
-/***/ "./js/modulos/Scroll.js":
-/*!******************************!*\
-  !*** ./js/modulos/Scroll.js ***!
-  \******************************/
-/***/ (() => {
-
-eval("// export default function Scroll() {\n//   const container = document.querySelectorAll(\".services-type\");\n//   const ScrollView = document.querySelector(\".services-type h5\");\n//   const spanView = document.querySelector(\"services-type span\");\n\n// // var elementoDesejado = document.getElementById(\"seu-elemento-id\");\n\n// // elementoDesejado.scrollIntoView({\n// //   behavior: \"smooth\", // Rola suavemente\n// //   block: \"start\", // Alinha o topo do elemento ao topo da janela\n// // });\n\n//# sourceURL=webpack://projeto2/./js/modulos/Scroll.js?");
 
 /***/ }),
 
@@ -47,8 +26,7 @@ eval("// export default function Scroll() {\n//   const container = document.que
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/BtnHome.js */ \"./js/modulos/BtnHome.js\");\n/* harmony import */ var _modulos_ImgTela_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modulos/ImgTela.js */ \"./js/modulos/ImgTela.js\");\n/* harmony import */ var _modulos_Scroll_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modulos/Scroll.js */ \"./js/modulos/Scroll.js\");\n/* harmony import */ var _modulos_Scroll_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modulos_Scroll_js__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n_modulos_Scroll_js__WEBPACK_IMPORTED_MODULE_2___default()();\nvar btnHome = new _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\".fa-bars\", \".nav-about-btn\", \"#titansDigital\");\nbtnHome.init();\nvar imgTela = new _modulos_ImgTela_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"](\".bg-main\");\nimgTela.init();\n\n//# sourceURL=webpack://projeto2/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/BtnHome.js */ \"./js/modulos/BtnHome.js\");\n\n// import ImgFundo from \"./modulos/ImgFundo.js\";\n\n// ImgFundo();\n\nvar btnHome = new _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\".fa-bars\", \".nav-about-btn\", \"#titansDigital\");\nbtnHome.init();\n\n//# sourceURL=webpack://projeto2/./js/script.js?");
 
 /***/ }),
 
@@ -58,7 +36,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*******************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _classCallCheck)\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\n//# sourceURL=webpack://projeto2/./node_modules/@babel/runtime/helpers/esm/classCallCheck.js?");
 
 /***/ }),
@@ -69,7 +46,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _createClass)\n/* harmony export */ });\n/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toPropertyKey.js */ \"./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js\");\n\nfunction _defineProperties(target, props) {\n  for (var i = 0; i < props.length; i++) {\n    var descriptor = props[i];\n    descriptor.enumerable = descriptor.enumerable || false;\n    descriptor.configurable = true;\n    if (\"value\" in descriptor) descriptor.writable = true;\n    Object.defineProperty(target, (0,_toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(descriptor.key), descriptor);\n  }\n}\nfunction _createClass(Constructor, protoProps, staticProps) {\n  if (protoProps) _defineProperties(Constructor.prototype, protoProps);\n  if (staticProps) _defineProperties(Constructor, staticProps);\n  Object.defineProperty(Constructor, \"prototype\", {\n    writable: false\n  });\n  return Constructor;\n}\n\n//# sourceURL=webpack://projeto2/./node_modules/@babel/runtime/helpers/esm/createClass.js?");
 
 /***/ }),
@@ -80,7 +56,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _toPrimitive)\n/* harmony export */ });\n/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ \"./node_modules/@babel/runtime/helpers/esm/typeof.js\");\n\nfunction _toPrimitive(input, hint) {\n  if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(input) !== \"object\" || input === null) return input;\n  var prim = input[Symbol.toPrimitive];\n  if (prim !== undefined) {\n    var res = prim.call(input, hint || \"default\");\n    if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(res) !== \"object\") return res;\n    throw new TypeError(\"@@toPrimitive must return a primitive value.\");\n  }\n  return (hint === \"string\" ? String : Number)(input);\n}\n\n//# sourceURL=webpack://projeto2/./node_modules/@babel/runtime/helpers/esm/toPrimitive.js?");
 
 /***/ }),
@@ -91,7 +66,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _toPropertyKey)\n/* harmony export */ });\n/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ \"./node_modules/@babel/runtime/helpers/esm/typeof.js\");\n/* harmony import */ var _toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toPrimitive.js */ \"./node_modules/@babel/runtime/helpers/esm/toPrimitive.js\");\n\n\nfunction _toPropertyKey(arg) {\n  var key = (0,_toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(arg, \"string\");\n  return (0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(key) === \"symbol\" ? key : String(key);\n}\n\n//# sourceURL=webpack://projeto2/./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js?");
 
 /***/ }),
@@ -102,7 +76,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _typeof)\n/* harmony export */ });\nfunction _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (obj) {\n    return typeof obj;\n  } : function (obj) {\n    return obj && \"function\" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj;\n  }, _typeof(obj);\n}\n\n//# sourceURL=webpack://projeto2/./node_modules/@babel/runtime/helpers/esm/typeof.js?");
 
 /***/ })
@@ -134,18 +107,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
