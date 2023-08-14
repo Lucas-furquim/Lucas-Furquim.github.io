@@ -1,6 +1,7 @@
 .skills {
   color: white;
   background-color: var(--black);
+  padding: 40px 0px;
 }
 
 .skill {

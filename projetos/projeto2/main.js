@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/BtnHome.js */ \"./js/modulos/BtnHome.js\");\n\n// import ImgFundo from \"./modulos/ImgFundo.js\";\n\n// ImgFundo();\n\nvar btnHome = new _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\".fa-bars\", \".nav-about-btn\", \"#titansDigital\");\nbtnHome.init();\n\n//# sourceURL=webpack://projeto2/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/BtnHome.js */ \"./js/modulos/BtnHome.js\");\n\nvar btnHome = new _modulos_BtnHome_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\".fa-bars\", \".nav-about-btn\", \"#titansDigital\");\nbtnHome.init();\n\n//# sourceURL=webpack://projeto2/./js/script.js?");
 
 /***/ }),
 
