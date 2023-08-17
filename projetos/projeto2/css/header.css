@@ -41,19 +41,21 @@ header nav {
 .nav-about {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
-  font-weight: 300;
-  font-size: 1.1rem;
-  letter-spacing: 0.2rem;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
   cursor: pointer;
 }
 
-.nav-about li {
+.nav-about li a {
+  color: red;
+  text-decoration: none;
   transition: color 0.5s;
 }
 
-.nav-about li:hover {
+.nav-about li a:hover {
   color: var(--white);
 }
 
@@ -137,6 +139,11 @@ header nav {
     box-sizing: border-box;
 
     z-index: 999;
+  }
+
+  .nav-about-btn li a {
+    color: red;
+    text-decoration: none;
   }
 
   .nav-about-btn::after {
