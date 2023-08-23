@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.skill h3 {
+.skill h4 {
   font-family: var(--ff-main);
   font-weight: 300;
   font-size: 1.8rem;
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 1000px) {
-  .skill h3 {
+  .skill h4 {
     font-size: 1.5rem;
   }
 
@@ -74,42 +74,49 @@
   }
 }
 
-@media (max-width: 500px) {
-  .skills h2 {
+@media (max-width: 610px) {
+  .skills h3 {
     font-size: 3.7rem;
   }
-  .skills h2::after {
+  .skills h3::after {
     left: -200px;
     width: 80px;
   }
 }
 
-@media (max-width: 490px) {
-  .skills h2 {
+@media (max-width: 560px) {
+  .skills h3 {
     padding: 80px 0px 40px 80px;
     margin-right: 60px;
   }
-  .skills h2::after {
+  .skills h3::after {
     left: 0px;
     top: -30px;
     width: 80px;
   }
 }
 
-@media (max-width: 400px) {
-  .skills h2 {
+@media (max-width: 500px) {
+  .skills h3 {
     font-size: 2.8em;
     padding: 70px 0px 70px 80px;
   }
-  .skills h2::after {
+  .skills h3::after {
     left: 0px;
     top: -10px;
     width: 80px;
   }
 }
 
+@media (max-width: 415px) {
+  .skills h3 {
+    font-size: 2.2rem;
+    padding: 70px 0px 70px 60px;
+  }
+}
+
 @media (max-width: 370px) {
-  .skills h2 {
+  .skills h3 {
     margin-right: 70px;
   }
 }

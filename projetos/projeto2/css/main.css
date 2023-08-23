@@ -54,6 +54,11 @@
   transition: all 0.5s ease;
 }
 
+.main-btn a {
+  text-decoration: none;
+  color: var(--dark-red);
+}
+
 .main-btn:hover {
   background-color: var(--black);
   color: var(--white);
