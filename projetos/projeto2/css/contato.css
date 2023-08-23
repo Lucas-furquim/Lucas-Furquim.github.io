@@ -1,0 +1,160 @@
+.contato {
+  background: black;
+  color: white;
+}
+
+.contato p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.contato form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 20px;
+  gap: 30px;
+}
+
+.contato label {
+  display: block;
+}
+
+.contato input {
+  display: block;
+  margin: 15px 0px 0px 0px;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contato .telefone {
+  grid-column: 1/-1;
+}
+
+.contato .mensagem {
+  grid-column: 1/-1;
+}
+
+.contato .mensagem textarea {
+  margin: 15px 0px 20px 0px;
+  height: 80px;
+  width: 100%;
+}
+
+.contato form button {
+  font-size: 2em;
+  background: #db3434;
+  color: #fff;
+  border: 0.25rem solid #db3434;
+  padding: 0.85em 0.75em;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.contato form button:hover {
+  color: #ee0707;
+}
+.contato form button::after {
+  content: "";
+  background: #ecf0f1;
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+}
+
+.contato form button::after {
+  transition: all 0.3s ease;
+}
+.contato form button:hover::after {
+  transition: all 0.3s ease-out;
+}
+
+.contato form button::after {
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+}
+.contato form button:hover::after {
+  transform: skewX(-45deg) scale(1, 1);
+}
+
+.rodape {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(rgba(211, 41, 29, 0.7), rgba(211, 41, 29, 0.5));
+  justify-content: flex-end;
+}
+
+.rodape ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.rodape ul li a {
+  color: white;
+}
+
+.rodape p {
+  text-align: start;
+  font-size: 1.1rem;
+  margin: 5px 10px;
+}
+
+.rodape ul {
+  margin: 5px 10px;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(172, 172, 172);
+}
+
+@media (max-width: 500px) {
+  .contato form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .contato h3 {
+    font-size: 2.5rem;
+  }
+
+  .contato h3::after {
+    left: -150px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contato .perfil {
+    width: 150px;
+  }
+
+  .contato h3 {
+    padding: 100px 0px 80px 60px;
+  }
+}
+
+@media (max-width: 410px) {
+  .contato h3 {
+    padding: 100px 0px 80px 40px;
+  }
+}
+
+@media (max-width: 390px) {
+  .contato h3 {
+    font-size: 2.1rem;
+  }
+}

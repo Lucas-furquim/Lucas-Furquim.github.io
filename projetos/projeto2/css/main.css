@@ -68,9 +68,13 @@
   border: 2px solid red;
   border-radius: 2px;
   cursor: pointer;
-
   color: red;
 }
+
+.main-seta a {
+  top: 20px;
+}
+
 .main-seta::before {
   content: "";
   position: absolute;
