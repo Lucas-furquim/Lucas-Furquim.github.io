@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.min.css">
+  <title>Rede de Hoteis</title>
+</head>
+
+<body class="bg-gray-100">
+
+  <header class="mx-20 my-10">
+    <section class="flex justify-between max-w-screen-xl mx-auto">
+      <h1 class="font-extrabold uppercase">Logo</h1>
+
+      <ul class="flex text-sm gap-4"">
+        <li class=" hover:underline cursor-pointer">Como reservar</li>
+        <li class="hover:underline cursor-pointer">Sobre nós</li>
+        <li class="hover:underline cursor-pointer">Informações</li>
+        <li class="hover:underline cursor-pointer">Contato</li>
+      </ul>
+    </section>
+
+  </header>
+
+  <main>
+
+    <section class="h-96 w-full relative text-white">
+      <img class="-z-10 absolute h-fullMax w-full object-cover" src="img/hero-image-1.png" height="450" alt="">
+      <section class="max-w-screen-xl mx-auto pt-48">
+        <section class="flex flex-col items-center pb-10">
+          <h2 class="text-white font-sans font-medium text-3xl z-20">Onde você quer ir?</h2>
+          <p class="opacity-80 text-blue-200 text-black">Escolha o estado e cidade para achar os melhores resorts.</p>
+        </section>
+
+        <form class="flex flex-row justify-center gap-8">
+          <select class="py-3 px-4 pr-9 block w-70 text-black border-gray-200 rounded-md text-sm">
+            <option value="1">São Paulo</option>
+            <option value="1">Rio de Janeiro</option>
+            <option value="1">Salvador</option>
+          </select>
+
+          <select class=" py-3 px-4 pr-9 block w-70 text-black border-gray-200 rounded-md text-sm">
+            <option value="1">Cidade</option>
+          </select>
+
+          <button class="flex gap-4 items-center h-11  py-3 px-2 pr-9 block w-70 text-orange-900 font-semibold bg-amber-500 border-gray-200 rounded-md text-sm"><img class="h-6" src="img/lupa.svg" /> Pesquisar resorts</button>
+        </form>
+      </section>
+
+    </section>
+
+    <section class=" mt-72 max-w-screen-xl mx-auto grid grid-cols-2 gap-20">
+      <div class="text-black">
+        <span class="uppercase text-sm text-gray-400 font-bold">Resort em Destaque</span>
+        <h3 class="text-2xl text-gray-700">Ecoresort Praia do Forte Bahia</h3>
+        <p class="uppercase text-xs text-gray-400 font-extrabold">Hotel Qualidade 5 estrelas</p>
+
+        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate temporibus accusantium aperiam nisi, quaerat placeat consequuntur obcaecati sint adipisci architecto facilis. Corrupti, nemo labore non qua</p>
+        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate temporibus accusantium aperiam nisi, quaerat placeat consequuntur obcaecati sint adipisci architecto facilis. Corrupti, nemo labore non qua</p>
+
+        <button class=" mt-4 h-11 top-60 w-42 py-3 px-2 pr-9 block w-70 text-orange-900 font-semibold bg-amber-500 border-gray-200 rounded-md text-sm">Solicitar Reserva &#10148;</button>
+      </div>
+
+      <div>
+        <img src="img/featured-img.png" alt="">
+      </div>
+    </section>
+
+    <section class="mt-32 mb-40 max-w-screen-xl mx-auto">
+      <h3 class="font-semibold text-center text-2xl mb-8">Conheça mais resorts</h3>
+
+      <div class='grid grid-cols-2 gap-4'>
+        <div class="relative">
+          <img class="rounded-lg block h-80" src="img/hotel-1.jpeg" alt="">
+          <p class="absolute bottom-2 left-4 z-10 text-white font-medium">
+            Beach Park Resort
+          </p>
+          <img class="absolute bottom-0 h-9 w-auto z-0 opacity-100" src="img/image-shadow.png" alt="">
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 h-40">
+
+          <div class="relative col-span-2 ">
+            <img class="block h-36 w-full object-cover rounded-lg" src="img/hotel-2.jpeg" alt="">
+            <p class="absolute bottom-2 left-4 z-10 text-white font-medium">
+              Salinas do Maragogi Resort
+            </p>
+            <img class="absolute bottom-0 h-9 w-auto z-0 opacity-100" src="img/image-shadow.png" alt="">
+          </div>
+
+          <div class="relative">
+            <img class="block h-40 w-full object-cover rounded-lg" src="img/hotel-3.jpeg" alt="">
+            <p class="absolute bottom-2 left-4 z-10 text-white font-medium">
+              grand Palladium
+            </p>
+            <img class="absolute bottom-0 h-9 w-auto z-0 opacity-100" src="img/image-shadow.png" alt="">
+          </div>
+
+          <div class="relative">
+            <img class="block h-40 w-full object-cover rounded-lg" src="img/hotel-4.jpeg" alt="">
+            <p class="absolute bottom-2 left-4 z-10 text-white font-medium">
+              Arraial d'Ajuda Eco Resort
+            </p>
+            <img class="absolute bottom-0 h-9 w-auto z-0 opacity-100" src="img/image-shadow.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-20">
+      <form class="flex flex-row justify-center gap-8">
+        <select class="py-3 px-4 pr-9 w-40 text-black border-gray-200 rounded-md text-sm">
+          <option value="1">São Paulo</option>
+          <option value="1">Rio de Janeiro</option>
+          <option value="1">Salvador</option>
+        </select>
+
+        <select class="py-3 px-4 pr-9 w-40 text-black border-gray-200 rounded-md text-sm">
+          <option value="1">Cidade</option>
+        </select>
+
+        <button class="py-3 pl-1 w-44 text-orange-900 font-semibold bg-amber-500 border-gray-200 rounded-md text-sm flex gap-4 items-center"><img class="h-6" src="img/lupa.svg" /> Pesquisar resorts</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-gray-200 px-32">
+    <section class="flex justify-between max-w-screen-xl mx-auto py-8">
+      <h3 class="font-bold text-gray-600 uppercase">Logo</h3>
+
+      <ul class="flex text-sm gap-4"">
+        <li class=" hover:underline cursor-pointer"><img src="img/icon-facebook.png" alt="icone face"></li>
+        <li class="hover:underline cursor-pointer"><img src="img/icon-instagram.png" alt="icone insta"></li>
+      </ul>
+    </section>
+  </footer>
+
+</body>
+</svg>
+
+</html>
